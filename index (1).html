@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Резюме Екатерины Барановой — дизайнера образовательного опыта и LXD-методиста">
+    <meta name="theme-color" content="#0066cc">
+    <title>Резюме - Екатерина Баранова - LXD методист</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            border-bottom: 3px solid #0066cc;
+            padding-bottom: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            gap: 24px;
+            margin-bottom: 15px;
+        }
+
+
+        .name {
+            font-size: 32px;
+            font-weight: bold;
+            color: #0066cc;
+        }
+        
+        .title {
+            font-size: 18px;
+            color: #555;
+            margin-top: 5px;
+        }
+        
+        .contacts {
+            text-align: right;
+            font-size: 13px;
+            line-height: 1.8;
+        }
+        
+        .contacts a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        
+        .key-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 15px;
+            font-size: 13px;
+            margin-top: 15px;
+        }
+        
+        .info-item {
+            background: #f0f6ff;
+            padding: 10px 12px;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+        }
+        
+        .info-label {
+            font-weight: 600;
+            color: #0066cc;
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+        
+        .info-value {
+            color: #333;
+            margin-top: 4px;
+        }
+        
+        section {
+            margin-bottom: 35px;
+        }
+        
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+            color: #0066cc;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .about-text {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        
+        .principles {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .principle {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 4px;
+            border-left: 4px solid #0066cc;
+        }
+        
+        .principle-number {
+            font-weight: bold;
+            color: #0066cc;
+            font-size: 12px;
+        }
+        
+        .principle-text {
+            font-size: 13px;
+            color: #333;
+            margin-top: 5px;
+        }
+        
+        .competencies {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .competency-block {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 4px;
+            border-top: 3px solid #0066cc;
+        }
+        
+        .competency-title {
+            font-weight: 600;
+            color: #0066cc;
+            font-size: 13px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        
+        .competency-list {
+            list-style: none;
+            font-size: 13px;
+        }
+        
+        .competency-list li {
+            margin-bottom: 8px;
+            padding-left: 15px;
+            position: relative;
+            color: #555;
+            line-height: 1.5;
+        }
+        
+        .competency-list li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #0066cc;
+            font-weight: bold;
+        }
+        
+        .experience-item {
+            margin-bottom: 25px;
+            page-break-inside: avoid;
+        }
+        
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+        
+        .position {
+            font-weight: 600;
+            color: #0066cc;
+            font-size: 14px;
+        }
+        
+        .company {
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .period {
+            color: #999;
+            font-size: 13px;
+        }
+        
+        .duration {
+            color: #999;
+            font-size: 13px;
+            font-style: italic;
+        }
+        
+        .experience-description {
+            font-size: 13px;
+            color: #555;
+            margin-top: 10px;
+        }
+        
+        .achievement-list {
+            list-style: none;
+            margin-top: 10px;
+            padding-left: 15px;
+        }
+        
+        .achievement-list li {
+            margin-bottom: 6px;
+            position: relative;
+            font-size: 13px;
+            color: #555;
+            line-height: 1.5;
+        }
+        
+        .achievement-list li:before {
+            content: "✓";
+            position: absolute;
+            left: -15px;
+            color: #0066cc;
+            font-weight: bold;
+        }
+        
+        .education-block {
+            margin-bottom: 15px;
+            background: #f9f9f9;
+            padding: 12px;
+            border-radius: 4px;
+        }
+        
+        .education-institution {
+            font-weight: 600;
+            color: #333;
+            font-size: 13px;
+        }
+        
+        .education-details {
+            font-size: 12px;
+            color: #666;
+            margin-top: 4px;
+        }
+        
+        .education-year {
+            color: #0066cc;
+            font-weight: 600;
+            font-size: 12px;
+        }
+        
+        .awards-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+        
+        .award-item {
+            background: #f9f9f9;
+            padding: 12px;
+            border-radius: 4px;
+            border-left: 3px solid #0066cc;
+            font-size: 13px;
+        }
+        
+        .award-year {
+            color: #0066cc;
+            font-weight: 600;
+            font-size: 11px;
+        }
+        
+        .award-title {
+            color: #333;
+            margin-top: 3px;
+            font-weight: 500;
+        }
+        
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .container {
+                max-width: 100%;
+                padding: 30px;
+                box-shadow: none;
+            }
+            section {
+                page-break-inside: avoid;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .key-info {
+                grid-template-columns: 1fr 1fr;
+            }
+            .principles {
+                grid-template-columns: 1fr;
+            }
+            .competencies {
+                grid-template-columns: 1fr;
+            }
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+            .awards-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <div class="header-top">
+                <div>
+                    <div class="name">Екатерина Баранова</div>
+                    <div class="title">Дизайнер образовательного опыта / LXD-методист</div>
+                </div>
+                <div class="contacts">
+                    <div>📍 Санкт-Петербург</div>
+                    <div>📱 +7 (937) 5490019</div>
+                    <div>✉️ <a href="mailto:katsbaranova@gmail.com">katsbaranova@gmail.com</a></div>
+                    <div>💬 Telegram: @katsbrrr</div>
+                </div>
+            </div>
+            <div class="key-info">
+                <div class="info-item">
+                    <div class="info-label">Гражданство</div>
+                    <div class="info-value">Российская Федерация</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Командировки</div>
+                    <div class="info-value">Редкие</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Желаемая зарплата</div>
+                    <div class="info-value">от 140 000 ₽</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Формат работы</div>
+                    <div class="info-value">Гибрид / Удаленно</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- О СЕБЕ -->
+        <section>
+            <h2>О себе</h2>
+            <p class="about-text">
+                Проектирую образовательный опыт, в котором творчество и структура/логика воссоединились, чтобы студент не просто прошел курс, а реально изменился.
+            </p>
+            
+            <p class="about-text" style="margin-top: 15px;">
+                Я не люблю делать "кое-как/побыстрее", а предпочитаю погружаться и выдавать качественные артефакты. По себе знаю, как чувствует себя студент, когда к его опыту отнеслись с уважением и стараюсь «подружить» запросы заказчика с его ограничениями и потребности студента. Работала и с потоками под 2000 студентов и с группами по 15 человек, онлайн и офлайн. Сейчас осознанно хочу работать со взрослыми.
+            </p>
+            
+            <p class="about-text">
+                С экспертами предпочитаю выстраивать горизонтальные отношения: я не учу их, а помогаю их экспертизе принять новый облик в образовательном формате. Мы равны, просто у нас разные роли.
+            </p>
+            
+            <div class="principles">
+                <div class="principle">
+                    <div class="principle-number">Принцип 1</div>
+                    <div class="principle-text"><strong>Целеполагание</strong> — как способ избежать неопределенности</div>
+                </div>
+                <div class="principle">
+                    <div class="principle-number">Принцип 2</div>
+                    <div class="principle-text"><strong>Путь так же важен</strong> — проектирую осмысленный трек, а не просто набор материалов</div>
+                </div>
+                <div class="principle">
+                    <div class="principle-number">Принцип 3</div>
+                    <div class="principle-text"><strong>Исследования как основа</strong> — не гадаю, а проверяю гипотезы данными</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- КЛЮЧЕВЫЕ КОМПЕТЕНЦИИ -->
+        <section>
+            <h2>Ключевые компетенции</h2>
+            <div class="competencies">
+                <div class="competency-block">
+                    <div class="competency-title">Методология и проектирование</div>
+                    <ul class="competency-list">
+                        <li>Модели обучения: от результата, от опыта, от проблемы</li>
+                        <li>Таксономии (Блум, SOLO)</li>
+                        <li>Теория мотивации "Самодетерминации"</li>
+                        <li>Полный цикл: от ЦА до оценки результатов</li>
+                    </ul>
+                </div>
+                <div class="competency-block">
+                    <div class="competency-title">Разработка курсов</div>
+                    <ul class="competency-list">
+                        <li>Концепция, архитектура и SJM</li>
+                        <li>Учебный контент и система оценивания</li>
+                        <li>Система учебной аналитики</li>
+                        <li>Лид-магниты и экспертные материалы</li>
+                    </ul>
+                </div>
+                <div class="competency-block">
+                    <div class="competency-title">Работа с командами</div>
+                    <ul class="competency-list">
+                        <li>Извлечение знаний и брифинги</li>
+                        <li>Сопровождение и методические материалы</li>
+                        <li>Продуктовый подход (спринты)</li>
+                        <li>Взаимодействие на основе данных</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ОПЫТ РАБОТЫ -->
+        <section>
+            <h2>Опыт работы</h2>
+            
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span>
+                        <span class="position">Методист образовательных программ по физике</span><br>
+                        <span class="company">100балльный репетитор</span>
+                    </span>
+                    <div>
+                        <div class="period">Март 2024 — настоящее время</div>
+                        <div class="duration">2,5 года</div>
+                    </div>
+                </div>
+                <ul class="achievement-list">
+                    <li>Разработала концепцию и учебный трек (SJM) для курсов подготовки к ОГЭ и ЕГЭ (10 класс)</li>
+                    <li>Составила древо метрик, внедрила систему учебной аналитики</li>
+                    <li>Создала учебные материалы, лид-магниты и экспертные посты для соцсетей</li>
+                    <li>Обучила кураторов экспертизе ОГЭ — разработала методические материалы для них</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span>
+                        <span class="position">Учитель физики</span><br>
+                        <span class="company">Частная школа «Пять с плюсом»</span>
+                    </span>
+                    <div>
+                        <div class="period">Сентябрь 2022 — Февраль 2024</div>
+                        <div class="duration">1,5 года</div>
+                    </div>
+                </div>
+                <ul class="achievement-list">
+                    <li>Проводила уроки в 9–11 классах: базовый курс (финская система) и профильный (подготовка к ЕГЭ, ОГЭ)</li>
+                    <li>Дополнительные занятия в учебном центре при школе</li>
+                    <li>Работала с критериальной системой оценивания, готовила отчеты для родителей</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span>
+                        <span class="position">Учитель физики</span><br>
+                        <span class="company">МБОУ Гимназия 33, г. Кострома</span>
+                    </span>
+                    <div>
+                        <div class="period">Сентябрь 2020 — Октябрь 2022</div>
+                        <div class="duration">2 года</div>
+                    </div>
+                </div>
+                <ul class="achievement-list">
+                    <li>Планирование учебного процесса, разработка программ и уроков</li>
+                    <li>Организация проектной деятельности</li>
+                    <li>Подготовка к олимпиадам и экзаменам (ОГЭ, ЕГЭ)</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span>
+                        <span class="position">Учитель физики, автор курса</span><br>
+                        <span class="company">Онлайн-школа №1</span>
+                    </span>
+                    <div>
+                        <div class="period">Январь 2022 — Август 2022</div>
+                        <div class="duration">8 месяцев</div>
+                    </div>
+                </div>
+                <ul class="achievement-list">
+                    <li>Разработала курс физики для 7 класса с нуля: презентации, уникальные задания, сценарии уроков</li>
+                    <li>Проводила дистанционные занятия</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span>
+                        <span class="position">Преподаватель физики</span><br>
+                        <span class="company">Образовательный центр MAXIMUM</span>
+                    </span>
+                    <div>
+                        <div class="period">Ноябрь 2018 — Июнь 2022</div>
+                        <div class="duration">3,5 года</div>
+                    </div>
+                </div>
+                <ul class="achievement-list">
+                    <li>Подготовка к ОГЭ и ЕГЭ по физике по готовым методическим материалам</li>
+                    <li>Участие в организации образовательной выставки «Навигатор поступления»</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span>
+                        <span class="position">Автор задач по физике</span><br>
+                        <span class="company">ООО «Физикон Лаб»</span>
+                    </span>
+                    <div>
+                        <div class="period">Сентябрь 2019 — Август 2020</div>
+                        <div class="duration">1 год</div>
+                    </div>
+                </div>
+                <ul class="achievement-list">
+                    <li>Создание интерактивных заданий</li>
+                    <li>Редакция рабочей тетради для 7 класса</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span>
+                        <span class="position">Тьютор, учитель физики</span><br>
+                        <span class="company">ЧОУ СОШ «Поколение», г. Волгоград</span>
+                    </span>
+                    <div>
+                        <div class="period">Август 2018 — Сентябрь 2019</div>
+                        <div class="duration">1 год</div>
+                    </div>
+                </div>
+                <ul class="achievement-list">
+                    <li>Тьюторское сопровождение и выстраивание индивидуальных образовательных траекторий</li>
+                    <li>Координация участия в конкурсах и олимпиадах</li>
+                    <li>Взаимодействие с родителями и решение организационных вопросов</li>
+                    <li>Проведение дополнительных занятий по физике</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span>
+                        <span class="position">Учитель физики</span><br>
+                        <span class="company">Лицей №2, г. Волгоград</span>
+                    </span>
+                    <div>
+                        <div class="period">Сентябрь 2017 — Июнь 2018</div>
+                        <div class="duration">10 месяцев</div>
+                    </div>
+                </div>
+                <ul class="achievement-list">
+                    <li>Планирование и проведение уроков, подготовка к ОГЭ</li>
+                    <li>Организация практических работ и проектов</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span>
+                        <span class="position">Педагог-организатор, заместитель директора по воспитательной работе</span><br>
+                        <span class="company">СОШ №36, г. Кострома</span>
+                    </span>
+                    <div>
+                        <div class="period">Октябрь 2015 — Июнь 2017</div>
+                        <div class="duration">1,5 года</div>
+                    </div>
+                </div>
+                <ul class="achievement-list">
+                    <li>Методическое руководство классными руководителями и педагогами допобразования</li>
+                    <li>Организация внеурочной занятости</li>
+                    <li>Разработка программ и отчетности</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <span>
+                        <span class="position">Воспитатель, педагог-организатор</span><br>
+                        <span class="company">ВДЦ «Орленок»</span>
+                    </span>
+                    <div>
+                        <div class="period">Май 2013 — Август 2015</div>
+                        <div class="duration">2 года</div>
+                    </div>
+                </div>
+                <ul class="achievement-list">
+                    <li>Разработка программ деятельности отряда</li>
+                    <li>Создание микроклимата и условий для индивидуального развития</li>
+                    <li>Организация мероприятий лагеря «Дозорный» и специализированных смен</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ОБРАЗОВАНИЕ -->
+        <section>
+            <div class="two-column">
+                <div>
+                    <h2>Образование</h2>
+                    <div class="education-block">
+                        <div class="education-institution">Костромской государственный университет им. Н.А. Некрасова</div>
+                        <div class="education-details">Физико-математический факультет, специальность «Физика»</div>
+                        <div class="education-year">2015</div>
+                    </div>
+                    <div class="education-block">
+                        <div class="education-institution">Костромской государственный университет им. Н.А. Некрасова</div>
+                        <div class="education-details">Квалификация «Преподаватель физики»</div>
+                        <div class="education-year">2015</div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Профессиональные курсы</h2>
+                    <div class="education-block">
+                        <div class="education-year">2026</div>
+                        <div class="education-details">«Проектирование образовательного опыта», School of Education</div>
+                    </div>
+                    <div class="education-block">
+                        <div class="education-year">2024</div>
+                        <div class="education-details">«Педагогический дизайн», Skillbox</div>
+                    </div>
+                    <div class="education-block">
+                        <div class="education-year">2020</div>
+                        <div class="education-details">«Углубленная и олимпиадная подготовка по физике», МФТИ</div>
+                    </div>
+                    <div class="education-block">
+                        <div class="education-year">2019</div>
+                        <div class="education-details">«Тьюторство в школьном образовании», Фоксфорд</div>
+                    </div>
+                    <div class="education-block">
+                        <div class="education-year">2019</div>
+                        <div class="education-details">Двухдневная программа «Розетки», Казань (РОО «Летняя школа»)</div>
+                    </div>
+                    <div class="education-block">
+                        <div class="education-year">2017</div>
+                        <div class="education-details">«Теория и методика организации деятельности детских объединений РДШ»</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ДОСТИЖЕНИЯ И НАГРАДЫ -->
+        <section>
+            <h2>Достижения и награды</h2>
+            <div class="awards-list">
+                <div class="award-item">
+                    <div class="award-year">2022</div>
+                    <div class="award-title">Победитель конкурса «Преподаватель года» в Онлайн-школе №1</div>
+                </div>
+                <div class="award-item">
+                    <div class="award-year">2019</div>
+                    <div class="award-title">Диплом II степени регионального конкурса педагогических проектов «Я меняю школу»</div>
+                </div>
+                <div class="award-item">
+                    <div class="award-year">2019</div>
+                    <div class="award-title">Финалист конкурса педагогического мастерства «Школьное PROдвижение»</div>
+                </div>
+                <div class="award-item">
+                    <div class="award-year">2018</div>
+                    <div class="award-title">Эксперт IV регионального чемпионата «Молодые профессионалы (WorldSkills Russia)»</div>
+                </div>
+                <div class="award-item">
+                    <div class="award-year">2013–2015</div>
+                    <div class="award-title">Почетные грамоты и благодарности от ВДЦ «Орленок» за реализацию программ смен</div>
+                </div>
+                <div class="award-item">
+                    <div class="award-year">2013–2015</div>
+                    <div class="award-title">Благодарность от Управления ФССП за реализацию программ</div>
+                </div>
+            </div>
+        </section>
+    </div>
+<script>window.parent.postMessage({ action: "ready" }, "*"); 
+ 
+window.console = new Proxy(console, {
+  get(target, prop) {
+    if (['log', 'warn', 'error'].includes(prop)) {
+      return new Proxy(target[prop], {
+        apply(fn, thisArg, args) {
+          fn.apply(thisArg, args);
+          window.parent.postMessage({ action: 'console', 
+            type: prop, 
+            args: args.map((arg) => {
+              try {
+                return JSON.stringify(arg).replace(/^["']|["']$/g, '');
+              } catch (e) {
+                return arg;
+              }
+            }) 
+          }, '*');
+        }
+      });
+    }
+    return target[prop];
+  }
+});
+</script></body>
+</html>
